@@ -1,6 +1,6 @@
 # VOC_xml_Annotation_modify_toolkit
 
-These are tools for modifying xml files in VOC format dataset（Py2）. 
+These are tools for modifying xml format annotations in VOC dataset（Py2）. 
 
 ## Including:  
 ### 1.Choose or Rename the Classes we want.
