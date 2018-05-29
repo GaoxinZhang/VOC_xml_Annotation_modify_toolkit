@@ -9,20 +9,25 @@ from __future__ import division
 import xml.dom.minidom as minidom
 import os
 
-# root_path is a folder where original xml files stored
-root_path = "C:\Users\Hancy\Desktop\AIRPLANE"
-# result_path is a folder where converted xml files stored
-result_path = "C:\Users\Hancy\Desktop\AIRPLANE"
 
-load_xml_path = os.path.join(root_path, 'Annotations')
-save_xml_path = os.path.join(result_path, 'Annotations_rivets')
+src_path = "G:\Boeing_reannotated0509"
+result_path = "G:\Boeing_reannotated0509"
+load_xml_path = os.path.join(src_path, 'Annotations_reannotated0509')
+save_xml_path = os.path.join(result_path, 'Annotations_reannotated0509_filter0522_no_scratch')
+
+isExists = os.path.exists(save_xml_path)
+if not isExists:
+    os.makedirs(save_xml_path)
+    print save_xml_path + ' was built'
 
 a = open('Desired_types.txt')
 desired_types = a.read().splitlines()
+# desired_types = ["Crack", "Scratch", "Dent"]
 num_desired_types = len(desired_types)
 
 b = open('new_type_names.txt')
 new_type_names = b.read().splitlines()
+# desired_types = ["Crack", "Scratch", "Dent"]
 num_new_type_names = len(new_type_names)
 
 if (num_desired_types != num_new_type_names):
@@ -45,12 +50,6 @@ def filterandrename_xml(xml_name):
 
         elif label_name not in desired_types:
             annotation.documentElement.removeChild(obj)
-
-    isExists = os.path.exists(save_xml_path)
-    if not isExists:
-        os.makedirs(save_xml_path)
-        print save_xml_path + ' was built'
-
 
     xml_tmp = 'tmp' + xml_name
     f_temp = open(os.path.join(save_xml_path, xml_tmp), 'w')

@@ -1,5 +1,8 @@
 Crack
 Scratch
-Flake off
-Injury around rivets
+Dent
+Corrosion
 Perforation
+Flake_off
+Lightning_strikes
+Rivets

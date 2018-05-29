@@ -8,12 +8,11 @@ from __future__ import division
 import xml.dom.minidom as minidom
 import os
 
-# root_path is a folder where original xml files stored
-root_path = "G:\Boeing_10k_Dataset\Forth"
-# result_path is a folder where converted xml files stored
+
+src_path = "G:\Boeing_10k_Dataset\Forth"
 result_path = "G:\Boeing_10k_Dataset\Forth"
 
-load_xml_path = os.path.join(root_path, 'Annotations')
+load_xml_path = os.path.join(src_path, 'Annotations')
 save_xml_path = os.path.join(result_path, 'Annotations_withoutchinese')
 
 

@@ -11,14 +11,10 @@ import matplotlib.image as mpimg
 import os
 
 
-# root_path is a folder where original xml files stored
-root_path = "G:\Boeing_10k_Dataset\Third"
-# result_path is a folder where converted xml files stored
-result_path = "G:\Boeing_10k_Dataset\Third"
-
-load_xml_path = os.path.join(result_path, 'Annotations_resize')
-load_img_path = os.path.join(result_path, 'JPEGImages_resize')
-
+src_path = "G:\Boeing_reannotated0509"
+result_path = "G:\Boeing_reannotated0509"
+load_xml_path = os.path.join(src_path, 'Annotations_reannotated0509_resized')
+load_img_path = os.path.join(src_path, 'JPEGImages')
 save_img_path = os.path.join(result_path, 'JPEGImages_plot_gt')
 
 

@@ -1,6 +1,10 @@
-#!/usr/bin/evn python
-#coding:utf-8
-# by Xin He
+# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+# % selected_img_file.py
+# % coding:utf-8
+# % To Select xml.
+# % 4-7-2018 Created
+# % Author:Xin He
+# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 import os
 import shutil
 
