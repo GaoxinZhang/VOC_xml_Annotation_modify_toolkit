@@ -11,11 +11,11 @@ import os
 import numpy as np
 
 
-src_path = "G:\Boeing_reannotated0509"
-load_xml_path = os.path.join(src_path, 'Annotations_reannotated0509_filter')
+src_path = "H:\Boeing_reannotated0604\Modified_all_0609_checked"
+load_xml_path = os.path.join(src_path, 'Annotations')
 a = open('Counted_type_names.txt')
-Counted_type_names = a.read().splitlines()
-# Counted_type_names = ["Crack", "Scratch", "Dent"]
+# Counted_type_names = a.read().splitlines()
+Counted_type_names = ["Scratch"]
 num_counted_types = len(Counted_type_names)
 num_of_types_xml = np.zeros(num_counted_types)
 num_of_pic_included_any_types = np.zeros(num_counted_types)
@@ -52,6 +52,7 @@ if __name__ == "__main__":
     for one in xml_files_input:
         # print 'Counting...'
         count_type_name(one)
+        print (one)
 
     for i in range(0, num_counted_types):
         print 'The num of type: [', Counted_type_names[i], '] is', num_of_types_xml[i]

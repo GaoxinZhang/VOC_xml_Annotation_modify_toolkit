@@ -9,9 +9,10 @@ import os
 import shutil
 
 
-src_path = "G:\Boeing_reannotated0509"
+src_path = "C:\Users\Hancy\Desktop\Boeing_data\AIRPLANE9"
+save_path = "C:\Users\Hancy\Desktop\Boeing_data\AIRPLANE9"
 load_pic_path = os.path.join(src_path, 'JPEGImages')
-load_xml_path = os.path.join(src_path, 'Annotations_reannotated0509_filter0522_no_scratch')
+load_xml_path = os.path.join(save_path, 'Annotations_scratch')
 
 
 
@@ -25,7 +26,7 @@ def delete_pic(pic_name):
     if xml_full_name in xml_files_input:
         mv_img_file_path = os.path.join(load_pic_path, pic_name)
 
-        save_img_path = os.path.join(root_path, 'save_pic_2')
+        save_img_path = os.path.join(save_path, 'JPEGImages_with_xml')
         isExists = os.path.exists(save_img_path)
         if not isExists:
             os.makedirs(save_img_path)

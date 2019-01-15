@@ -11,10 +11,10 @@ import matplotlib.image as mpimg
 import os
 
 
-src_path = "G:\Boeing_reannotated0509"
-result_path = "G:\Boeing_reannotated0509"
-load_xml_path = os.path.join(src_path, 'Annotations_reannotated0509_resized')
-load_img_path = os.path.join(src_path, 'JPEGImages')
+src_path = "C:\Users\Hancy\Desktop\\testvacancy"
+result_path = "C:\Users\Hancy\Desktop\\testvacancy"
+load_xml_path = os.path.join(src_path, 'resultxml')
+load_img_path = os.path.join(src_path, 'resultjpg')
 save_img_path = os.path.join(result_path, 'JPEGImages_plot_gt')
 
 

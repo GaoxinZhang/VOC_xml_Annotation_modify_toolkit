@@ -20,7 +20,7 @@ def filterandrename_xml(xml_name):
 
     annotation = minidom.parse(os.path.join(load_xml_path, xml_name))
     new_folder = 'JPEGImages'
-    new_path = 'boeingdata'
+    new_path = '..\\images\\'
 
     annotation.getElementsByTagName("folder")[0].childNodes[0].nodeValue = unicode(str(new_folder), encoding='utf-8')
     annotation.getElementsByTagName("path")[0].childNodes[0].nodeValue = unicode(str(new_path), encoding='utf-8')

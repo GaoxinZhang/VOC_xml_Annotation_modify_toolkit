@@ -20,7 +20,6 @@ result_path = "C:\Users\Hancy\Desktop\plot_AIRPLANE5"
 
 load_xml_path = os.path.join(root_path, 'Annotations')
 load_img_path = os.path.join(root_path, 'JPEGImages')
-
 save_xml_path = os.path.join(result_path, 'Annotations_div')
 save_img_path = os.path.join(result_path, 'JPEGImages_div')
 

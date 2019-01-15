@@ -10,10 +10,10 @@ import xml.dom.minidom as minidom
 import os
 
 
-src_path = "G:\Boeing_reannotated0509"
-result_path = "G:\Boeing_reannotated0509"
-load_xml_path = os.path.join(src_path, 'Annotations_reannotated0509')
-save_xml_path = os.path.join(result_path, 'Annotations_reannotated0509_filter0522_no_scratch')
+src_path = "C:\Users\Hancy\Desktop\\airplane_9_classes_VR"
+result_path = "C:\Users\Hancy\Desktop\\airplane_9_classes_VR"
+load_xml_path = os.path.join(src_path, 'Annotations')
+save_xml_path = os.path.join(result_path, 'Annotations_new')
 
 isExists = os.path.exists(save_xml_path)
 if not isExists:

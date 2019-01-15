@@ -1,3 +1,10 @@
+Flake_off
+Injured_fastener
+Puncture_Perforation
+Fastener_hole
 Dent
+Crack
+Scratch
 Corrosion
-Lightning_strikes
+Lightening_strike
+Puncture_Perforation

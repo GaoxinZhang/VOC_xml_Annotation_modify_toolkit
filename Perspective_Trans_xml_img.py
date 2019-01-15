@@ -24,9 +24,9 @@ right_offset = 0
 
 # Perspective Transformation Param
 anglex = 0
-angley = 20
-anglez = 0
-fov = 21
+angley = 0
+anglez = 15
+fov = 1
 
 root_path = "C:\Users\Hancy\Desktop\LabelImg" #Load img & xml from the subfolder of this folder
 result_path = "C:\Users\Hancy\Desktop\LabelImg" # Save jpg & xml in the subfolder this folder

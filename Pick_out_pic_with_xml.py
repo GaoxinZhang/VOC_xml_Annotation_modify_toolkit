@@ -8,11 +8,11 @@ from __future__ import division
 import os
 import shutil
 
-root_path1 = "C:\Users\Hancy\Desktop\Zhang\AIRPLANE5_Zhang"
-root_path2 = "C:\Users\Hancy\Desktop\Zhang\AIRPLANE5_Zhang"
-save_path = "C:\Users\Hancy\Desktop\Zhang\AIRPLANE5_Zhang"
+root_path1 = "H:\Boeing_reannotated0706\Modified_all_0716_checked"
+root_path2 = "H:\Boeing_reannotated0706\Modified_all_0716_checked"
+save_path = "H:\Boeing_reannotated0706\Modified_all_0716_checked"
 load_pic_path = os.path.join(root_path1, 'JPEGImages')
-load_xml_path = os.path.join(root_path2, 'Annotations')
+load_xml_path = os.path.join(root_path2, 'Annotations_scratch')
 
 
 
@@ -35,7 +35,7 @@ def pick_pic(pic_name):
 
         save_img_file_path = os.path.join(save_img_path, pic_name)
         # shutil.move(mv_img_file_path, save_img_file_path)
-        shutil.move(mv_img_file_path, save_img_file_path)
+        shutil.copy(mv_img_file_path, save_img_file_path)
         # shutil.copy(mv_img_file_path, save_img_file_path)
 
 

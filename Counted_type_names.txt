@@ -1,8 +1,6 @@
 Crack
 Scratch
-Dent
-Corrosion
-Perforation
+Fastener_hole
+Puncture_Perforation
 Flake_off
-Lightning_strikes
-Rivets
+Injured_fastener
